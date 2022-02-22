@@ -1,0 +1,79 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CRUDApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CRUDApp_jar</output-path>
+    <root id="archive" name="CRUDApp.jar">
+      <element id="module-output" name="CRUDApp.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.8.1/1e362cbe6d0f225b066757865e233972557484/junit-platform-commons-1.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/16/d8334d505d5eb64400ae57f989c3db9dd47dcee3/javafx-controls-16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.8.1/e6c63bf990dc88a6527b4ed617b23e47048f07e0/junit-platform-engine-1.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/16/369f646fc29d2223cc98cfc3c059f2409b3e8fcb/javafx-fxml-16-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/16/65cdeae29c67d25932dcc66ca4f7d269923631ba/javafx-controls-16-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/16/56c3d09fb6cb5136ce9abc1d0d6a6914e0eed944/javafx-base-16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/16/cd18f8477818b40cfdbcfec7e2fc15f632f0a2f/javafx-graphics-16-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/16/e0564fea3f27dd3a10fa62e5005612333fc244bc/javafx-base-16-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.8.1/21b86e08aae2720bbf017703669948be96d1388c/junit-jupiter-engine-5.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/16/ddd09436524cfea7995db18f93b6c9a2ec54bff3/javafx-graphics-16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/8.0.28/33678b1729d4f832b9e4bcb2d5bbd67940920a7a/mysql-connector-java-8.0.28.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.11.4/7ec0925cc3aef0335bbc7d57edfd42b0f86f8267/protobuf-java-3.11.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.8.1/6538b88eb8bf8811bc7b6efb5246f835c15e0bfe/junit-jupiter-api-5.8.1.jar" path-in-jar="/" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-console-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-console-l1-2-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-datetime-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-debug-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-errorhandling-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-file-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-file-l1-2-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-file-l2-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-handle-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-heap-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-interlocked-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-libraryloader-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-localization-l1-2-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-memory-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-namedpipe-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-processenvironment-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-processthreads-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-processthreads-l1-1-1.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-profile-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-rtlsupport-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-string-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-synch-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-synch-l1-2-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-sysinfo-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-timezone-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-core-util-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-crt-conio-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-crt-convert-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-crt-environment-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-crt-filesystem-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-crt-heap-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-crt-locale-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-crt-math-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-crt-multibyte-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-crt-private-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-crt-process-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-crt-runtime-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-crt-stdio-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-crt-string-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-crt-time-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/api-ms-win-crt-utility-l1-1-0.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/decora_sse.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/fxplugins.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/glass.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/glib-lite.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/gstreamer-lite.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/javafx_font.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/javafx_iio.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/jfxmedia.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/jfxwebkit.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/msvcp140.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/prism_common.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/prism_d3d.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/prism_sw.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/ucrtbase.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/vcruntime140.dll" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/bin/vcruntime140_1.dll" />
+    </root>
+  </artifact>
+</component>
