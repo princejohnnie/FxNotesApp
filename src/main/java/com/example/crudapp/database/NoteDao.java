@@ -16,8 +16,6 @@ public class NoteDao {
 
     public static ObservableList<Note> observableNoteList = FXCollections.observableArrayList();
 
-    public static DbConnection dbConnection = new DbConnection();
-
     private static void retrieveNotes(){
 
         CRUDHelper.readAll(TABLE_NAME);
