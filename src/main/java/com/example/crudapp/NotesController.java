@@ -56,10 +56,6 @@ public class NotesController implements Initializable {
             };*/
         });
 
-        saveButton.setOnAction(e -> {
-            noteTitle.setText("");
-            noteText.setText("");
-        });
     }
 
     public void showNote(){
@@ -92,6 +88,10 @@ public class NotesController implements Initializable {
             updateNote(selectedNote);
         }
 
+        saveButton.setOnAction(e -> {
+            noteTitle.setText("");
+            noteText.setText("");
+        });
     }
 
     public void deleteNote(){
