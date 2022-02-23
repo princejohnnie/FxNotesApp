@@ -2,17 +2,9 @@ package com.example.crudapp;
 
 import com.example.crudapp.database.NoteDao;
 import com.example.crudapp.model.Note;
-import javafx.beans.binding.Bindings;
-import javafx.beans.value.ObservableStringValue;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.input.MouseEvent;
-import javafx.util.Callback;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -39,7 +31,6 @@ public class NotesController implements Initializable {
     @FXML
     private Label infoText;
 
-   // ObservableList<Note> observableList = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -48,24 +39,26 @@ public class NotesController implements Initializable {
 
         notesList.setItems((NoteDao.getNotes()));
 
-        notesList.setCellFactory(new Callback<ListView<Note>, ListCell<Note>>() {
-            @Override
-            public ListCell<Note> call(ListView<Note> param) {
+        notesList.setCellFactory(listCell -> {
 
-               // return new NoteListCellFactory();
+            return new NoteListCellFactory();
 
-                return new ListCell<>(){
-                    @Override
-                    protected void updateItem(Note item, boolean empty) {
-                        super.updateItem(item, empty);
-                        if (empty || item == null){
-                            setText(null);
-                        }else {
-                            setText(item.getNoteTitle());
-                        }
+           /* return new ListCell<>(){
+                @Override
+                protected void updateItem(Note item, boolean empty) {
+                    super.updateItem(item, empty);
+                    if (empty || item == null){
+                        setText(null);
+                    }else {
+                        setText(item.getNoteTitle());
                     }
-                };
-            }
+                }
+            };*/
+        });
+
+        saveButton.setOnAction(e -> {
+            noteTitle.setText("");
+            noteText.setText("");
         });
     }
 
@@ -109,7 +102,13 @@ public class NotesController implements Initializable {
         Note note = notesList.getSelectionModel().getSelectedItem();
         int noteId = note.getId();
         int rows = NoteDao.deleteNote(noteId);
+        deleteButton.setOnTouchPressed(e -> {
+            noteTitle.setText("");
+            noteText.setText("");
+        });
+
         infoText.setText("Note deleted");
+
 
         Logger.getAnonymousLogger().log(Level.INFO, "Deleted " + rows + " row(s)");
 

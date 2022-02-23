@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Button?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0"
+            prefWidth="620.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.crudapp.NotesController">
+   <Label layoutX="7.0" prefHeight="47.0" prefWidth="606.0" text="Notes"/>
+   <VBox layoutX="7.0" layoutY="47.0" prefHeight="543.0" prefWidth="173.0">
+      <ListView fx:id="notesList" onMouseClicked="#showNote" prefHeight="450.0" prefWidth="173.0"/>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crudapp.NotesController">
-   <children>
-      <Label layoutX="7.0" prefHeight="47.0" prefWidth="606.0" text="Notes" />
-      <VBox layoutX="7.0" layoutY="47.0" prefHeight="543.0" prefWidth="173.0" >
-         <children>
-            <ListView fx:id="notesList" onMouseClicked="#showNote" prefHeight="450.0" prefWidth="173.0" />
-
-         </children>
-      </VBox>
-      <TextField fx:id="noteTitle" prefHeight="45.0" prefWidth="530.0" layoutX="184.0" layoutY="48.0" promptText="Enter title"/>
-      <TextArea fx:id="noteText" layoutX="185.0" layoutY="93.0" prefHeight="405.0" prefWidth="530.0" promptText="Enter text" />
-      <Label fx:id="infoText" text="#" prefHeight="50" prefWidth="460.0" layoutX="184.0" layoutY="495.0" />
-      <Button fx:id="saveButton" layoutX="184.0" layoutY="550.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#saveNote" prefHeight="35.0" prefWidth="100.0" text="Save" />
-      <Button fx:id="deleteButton" layoutX="615.0" layoutY="550.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#deleteNote" prefHeight="35.0" prefWidth="100.0" text="Delete" />
-   </children>
+   </VBox>
+   <TextField fx:id="noteTitle" prefHeight="45.0" prefWidth="530.0" layoutX="184.0" layoutY="48.0"
+              promptText="Enter title"/>
+   <TextArea fx:id="noteText" layoutX="185.0" layoutY="93.0" prefHeight="405.0" prefWidth="530.0"
+             promptText="Enter text"/>
+   <Label fx:id="infoText" prefHeight="50" prefWidth="460.0" layoutX="184.0" layoutY="495.0"/>
+   <Button fx:id="saveButton" layoutX="184.0" layoutY="550.0" minHeight="-Infinity" minWidth="-Infinity"
+           mnemonicParsing="false" onAction="#saveNote" prefHeight="35.0" prefWidth="100.0" text="Save"/>
+   <Button fx:id="deleteButton" layoutX="615.0" layoutY="550.0" minHeight="-Infinity" minWidth="-Infinity"
+           mnemonicParsing="false" onAction="#deleteNote" prefHeight="35.0" prefWidth="100.0" text="Delete"/>
 </AnchorPane>

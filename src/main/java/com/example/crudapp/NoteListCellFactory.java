@@ -6,17 +6,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;
-import javafx.scene.control.SplitPane;
-import javafx.util.Callback;
+import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class NoteListCellFactory extends ListCell<Note> {
+public class NoteListCellFactory extends ListCell<Note> implements Initializable {
 
     @FXML
-    public SplitPane splitPane;
+    public VBox VBox;
 
     @FXML
     public Label title;
@@ -27,16 +26,7 @@ public class NoteListCellFactory extends ListCell<Note> {
     FXMLLoader mLLoader;
 
     public NoteListCellFactory(){
-        if (mLLoader == null) {
-            mLLoader = new FXMLLoader(NotesApplication.class.getResource("noteslistcell-view.fxml"));
-            mLLoader.setController(this);
 
-            try {
-                mLLoader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
     }
 
     @Override
@@ -50,7 +40,7 @@ public class NoteListCellFactory extends ListCell<Note> {
             setGraphic(null);
 
         } else {
-            /*if (mLLoader == null) {
+            if (mLLoader == null) {
                 mLLoader = new FXMLLoader(NotesApplication.class.getResource("noteslistcell-view.fxml"));
                 mLLoader.setController(this);
 
@@ -60,7 +50,10 @@ public class NoteListCellFactory extends ListCell<Note> {
                     e.printStackTrace();
                 }
 
-            }*/
+            }
+
+            setText(null);
+            setGraphic(VBox);
 
             title.setText(item.getNoteTitle());
             text.setText(item.getNoteText());
@@ -68,4 +61,8 @@ public class NoteListCellFactory extends ListCell<Note> {
 
     }
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+    }
 }

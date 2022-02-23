@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
-<SplitPane fx:id="splitPane" fx:controller="com.example.crudapp.NoteListCellFactory" dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-  <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-         <children>
-            <Label fx:id="title" layoutX="-3.0" layoutY="9.0" prefHeight="180.0" prefWidth="598.0" text="Label" />
-         </children></AnchorPane>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-         <children>
-            <Label fx:id="text" layoutX="2.0" layoutY="5.0" prefHeight="188.0" prefWidth="591.0" text="Label" />
-         </children></AnchorPane>
-  </items>
-</SplitPane>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<VBox fx:id="VBox" maxHeight="40" maxWidth="100" minHeight="35" minWidth="95" prefHeight="40.0" prefWidth="100.0"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <Label fx:id="title" layoutX="-3.0" layoutY="9.0" prefHeight="58.0" prefWidth="100.0"/>
+    <Label fx:id="text" layoutX="2.0" layoutY="5.0" prefHeight="58.0" prefWidth="100.0"/>
+</VBox>

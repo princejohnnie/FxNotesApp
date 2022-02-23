@@ -30,14 +30,11 @@ public class CRUDHelper {
             PreparedStatement statement = connection.prepareStatement(queryBuilder.toString());
             try (ResultSet rs = statement.executeQuery()) {
                 rs.next();
-                switch (fieldDataType) {
-                    case Types.INTEGER:
-                        return rs.getInt(fieldName);
-                    case Types.VARCHAR:
-                        return rs.getString(fieldName);
-                    default:
-                        throw new IllegalArgumentException("Index type " + indexDataType + " from sql.Types is not yet supported.");
-                }
+                return switch (fieldDataType) {
+                    case Types.INTEGER -> rs.getInt(fieldName);
+                    case Types.VARCHAR -> rs.getString(fieldName);
+                    default -> throw new IllegalArgumentException("Index type " + indexDataType + " from sql.Types is not yet supported.");
+                };
             }
         } catch (SQLException exception) {
             Logger.getAnonymousLogger().log(
@@ -66,7 +63,7 @@ public class CRUDHelper {
 
                 observableNoteList.add(new Note(id, noteTitle, noteText));
 
-                 System.out.println("Id: " + id + " Title: " + noteTitle + " Text: " + noteText);
+               //  System.out.println("Id: " + id + " Title: " + noteTitle + " Text: " + noteText);
             }
 
         } catch (SQLException exception) {
@@ -120,13 +117,12 @@ public class CRUDHelper {
         queryBuilder.append(" VALUES (");
         for (int i = 0; i < number; i++) {
             switch (types[i]) {
-                case Types.VARCHAR:
+                case Types.VARCHAR -> {
                     queryBuilder.append("'");
                     queryBuilder.append((String) values[i]);
                     queryBuilder.append("'");
-                    break;
-                case Types.INTEGER:
-                    queryBuilder.append((int) values[i]);
+                }
+                case Types.INTEGER -> queryBuilder.append((int) values[i]);
             }
             if (i < number - 1) queryBuilder.append(", ");
         }
@@ -177,16 +173,13 @@ public class CRUDHelper {
     private static String convertObjectToSQLField(Object value, int type) {
         StringBuilder queryBuilder = new StringBuilder();
         switch (type) {
-            case Types.VARCHAR:
+            case Types.VARCHAR -> {
                 queryBuilder.append("'");
                 queryBuilder.append(value);
                 queryBuilder.append("'");
-                break;
-            case Types.INTEGER:
-                queryBuilder.append(value);
-                break;
-            default:
-                throw new IllegalArgumentException("Index type " + type + " from sql.Types is not yet supported.");
+            }
+            case Types.INTEGER -> queryBuilder.append(value);
+            default -> throw new IllegalArgumentException("Index type " + type + " from sql.Types is not yet supported.");
         }
         return queryBuilder.toString();
     }
