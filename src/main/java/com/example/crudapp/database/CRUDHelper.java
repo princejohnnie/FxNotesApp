@@ -63,7 +63,7 @@ public class CRUDHelper {
 
                 observableNoteList.add(new Note(id, noteTitle, noteText));
 
-                 System.out.println("Id: " + id + "|| Title: " + noteTitle + "|| Text: " + noteText);
+                // System.out.println("Id: " + id + "|| Title: " + noteTitle + "|| Text: " + noteText);
             }
 
         } catch (SQLException exception) {
