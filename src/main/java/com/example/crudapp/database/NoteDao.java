@@ -8,22 +8,24 @@ import java.sql.*;
 import java.util.Optional;
 
 public class NoteDao {
-    private static final String DB_NAME = "notes_db";
-    public static final String TABLE_NAME = "notes";
+    private static final String DB_NAME = "notes_db.db";
+    public static final String TABLE_NAME = "Notes";
     public static final String COL_ID = "id";
     public static final String COL_NOTE_TITLE = "col_note_title";
     public static final String COL_NOTE_TEXT = "col_note_text";
 
     public static ObservableList<Note> observableNoteList = FXCollections.observableArrayList();
 
+
+    public static ObservableList<Note> getNotes() {
+        retrieveNotes();
+        return FXCollections.unmodifiableObservableList(observableNoteList);
+    }
+
     private static void retrieveNotes(){
 
         CRUDHelper.readAll(TABLE_NAME);
 
-    }
-    public static ObservableList<Note> getNotes() {
-        retrieveNotes();
-        return FXCollections.unmodifiableObservableList(observableNoteList);
     }
 
     public static int insertNote(String noteTitle, String noteText){

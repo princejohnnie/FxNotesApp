@@ -88,10 +88,6 @@ public class NotesController implements Initializable {
             updateNote(selectedNote);
         }
 
-        saveButton.setOnAction(e -> {
-            noteTitle.setText("");
-            noteText.setText("");
-        });
     }
 
     public void deleteNote(){
@@ -102,6 +98,7 @@ public class NotesController implements Initializable {
         Note note = notesList.getSelectionModel().getSelectedItem();
         int noteId = note.getId();
         int rows = NoteDao.deleteNote(noteId);
+
         deleteButton.setOnTouchPressed(e -> {
             noteTitle.setText("");
             noteText.setText("");

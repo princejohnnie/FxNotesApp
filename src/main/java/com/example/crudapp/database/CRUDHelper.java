@@ -63,7 +63,7 @@ public class CRUDHelper {
 
                 observableNoteList.add(new Note(id, noteTitle, noteText));
 
-               //  System.out.println("Id: " + id + " Title: " + noteTitle + " Text: " + noteText);
+                 System.out.println("Id: " + id + " Title: " + noteTitle + " Text: " + noteText);
             }
 
         } catch (SQLException exception) {
@@ -100,7 +100,7 @@ public class CRUDHelper {
             System.out.println(ex.toString());
             Logger.getAnonymousLogger().log(
                     Level.SEVERE,
-                    LocalDateTime.now() + ": Could not add note to database");
+                    LocalDateTime.now() + ": Could not update note in database");
             return -1;
         }
     }
